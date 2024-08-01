@@ -25,11 +25,11 @@ This analysis is compiled to a score between 0 and 100 that is presented to the 
 
 ## Screenshots
 
-<img src="./assets/main_scr.png" alt="Main App" width="300"/>
-
-<img src="./assets/messges_scr.png" alt="Analysis Results" width="300"/>
-
-<img src="./assets/report.png" alt="Report" width="300"/>
+<p float="left">
+  <img src="./assets/main_scr.png" alt="Main App" width="300"/>
+  <img src="./assets/messges_scr.png" alt="Analysis Results" width="300"/>
+  <img src="./assets/report.png" alt="Report" width="300"/>
+</p>
 ## Notes
 - The RoBERTa fine-tuned model is not included in this upload (due to size), so are the training sets (due to privacy). The included "Labs" folder allows you to create the whole model if datasets are provided. The datasets paths can be found in Labs\...\paths.py
 
