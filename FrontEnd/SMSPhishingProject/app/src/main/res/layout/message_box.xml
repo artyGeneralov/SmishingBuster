@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    >
+
+    <!-- Background Square 1 -->
+    <View
+        android:id="@+id/messages_square"
+        android:layout_width="240dp"
+        android:layout_height="148dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/messages_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Background Square 2 -->
+
+
+    <View
+        android:id="@+id/score_square"
+        android:layout_width="120dp"
+        android:layout_height="148dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/messages_square"
+        android:background="@drawable/score_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/messages_square"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/message_box_element"
+        android:padding="3dp"
+        android:text="Sender:"
+        android:textAlignment="textStart"
+        android:textColor="@color/element_txt_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSender"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/message_box_element"
+        android:text="0506943794"
+        android:textAlignment="center"
+        android:textColor="@color/sender_txt_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="211dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/message_box_element"
+        android:padding="3dp"
+        android:text="message"
+        android:textColor="@color/message_txt_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="69dp"
+        android:layout_height="29dp"
+        android:background="@drawable/message_box_element"
+        android:padding="3dp"
+        android:text="Danger Score:"
+        android:textAlignment="center"
+        android:textColor="@color/element_txt_color"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvMessage"
+        app:layout_constraintEnd_toEndOf="@+id/score_square"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/score_square"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_box_element"
+        android:padding="3dp"
+        android:text="50"
+        android:textColor="@color/element_txt_color"
+        android:textSize="50dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/score_square"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/score_square"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_box_element"
+        android:padding="3dp"
+        android:text="/100"
+
+        android:textColor="@color/element_txt_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tvMessage"
+        app:layout_constraintEnd_toEndOf="@+id/score_square"
+        app:layout_constraintStart_toStartOf="@+id/score_square"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

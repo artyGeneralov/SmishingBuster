@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Arrived Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border">
+            <TextView
+                android:id="@+id/arrived_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/element_txt_color"
+                android:text="Arrived:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="6dp"/>
+            <TextView
+                android:id="@+id/arrived_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:00 01/04/24"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Sender -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border">
+            <TextView
+                android:id="@+id/sender_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="6dp"/>
+            <TextView
+                android:id="@+id/sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+97854682936"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Message Body -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border">
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="6dp"/>
+            <TextView
+                android:id="@+id/message_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please send me all your money"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Total Danger Score -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/message_border_blue">
+            <TextView
+                android:id="@+id/danger_score_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Danger Score:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/danger_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="98/100"
+                android:layout_marginStart="40dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Suspicious Elements -->
+        <LinearLayout
+            android:id="@+id/suspicious_elements_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/suspicious_elements_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suspicious Elements:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="6dp"/>
+            <TextView
+                android:id="@+id/suspicious_elements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="first\nsecond\nthird"
+                android:visibility="gone"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+
+        <!-- Links -->
+        <LinearLayout
+            android:id="@+id/links_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/links_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Links:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="6dp"/>
+            <TextView
+                android:id="@+id/links"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:layout_marginStart="30dp"
+                />
+        </LinearLayout>
+
+        <!-- Link Screenshots -->
+        <LinearLayout
+            android:id="@+id/link_screenshots_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/messages_border"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/link_screenshots_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Screenshots:"
+                android:textColor="@color/element_txt_color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete_message"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Delete"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reports"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_alignEnd="@+id/toggleButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/reports"
+        android:textSize="26dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/gear2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toggleButton"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="111dp"
+        android:background="@drawable/toggle_button"
+        android:checkable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendSMSButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="75dp"
+        android:text="Send SMS"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFlush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginBottom="75dp"
+        android:text="Flush DB"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvServiceStatus"
+        android:layout_width="246dp"
+        android:layout_height="56dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_alignEnd="@+id/toggleButton"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-14dp"
+        android:text="Protection is OFF"
+        android:textSize="28dp" />
+
+</RelativeLayout>

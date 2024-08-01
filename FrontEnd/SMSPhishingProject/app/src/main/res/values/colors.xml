@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Message Box Colors -->
+    <color name="message_box_color">#50404135</color>
+    <color name="message_bg_color">#509E4CEB</color>
+    <color name="message_txt_color">#FF000000</color>
+    <color name="messages_background_color">#80404057</color>
+    <color name="element_bg_color">#00000000</color>
+    <color name="element_txt_color">#FF156082</color>
+    <color name="sender_bg_color">#804C4C89</color>
+    <color name="sender_txt_color">#FF000000</color>
+    <color name="date_txt_color">#FF6C894C</color>
+    <color name="date_bg_color">#804C4C89</color>
+    <color name="score_txt_color">#FF6C894C</color>
+    <color name="score_bg_color">#804C4C89</color>
+
+    <color name="buttonTxtColor">#FFFFFF</color>
+
+    <color name="score_low_txt">#FF00B050</color>
+    <color name="score_medium_txt">#FFFFC000</color>
+    <color name="score_high_txt">#FFFF0000</color>
+    <color name="score_pending_txt">#FFF2CC72</color>
+
+    <color name="score_low_bg">#9FD9F2D0</color>
+    <color name="score_medium_bg">#9FFFFF99</color>
+    <color name="score_high_bg">#9FF6C6AD</color>
+    <color name="score_pending_bg">#9FC8B27F</color>
+
+    <color name="protection_on">#00B050</color>
+    <color name="protection_off">#CC2222</color>
+
+    <color name="main_bg_start">#3f000000</color>
+    <color name="main_bg_mid">#7fffffff</color>
+    <color name="main_bg_end_green">#2f0080Af</color>
+    <color name="main_bg_end_red">#2f500060</color>
+
+    <color name="button_bg_color">#FF0E2841</color>
+
+
+    <!-- General Colors -->
+    <color name="background_color">#80241C19</color>
+</resources>

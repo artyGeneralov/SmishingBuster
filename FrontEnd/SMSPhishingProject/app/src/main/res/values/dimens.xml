@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="return_button_top_margin">10dp</dimen>
+    <dimen name="return_button_start_margin">25dp</dimen>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/combined_bg_overlay</item>
+        <item name="android:fontFamily">@font/biome_light</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+        <item name="colorPrimaryDark">#70000000</item>
+
+    </style>
+
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">13dp</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/buttonTxtColor</item>
+    </style>
+
+
+</resources>
